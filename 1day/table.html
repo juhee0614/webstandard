@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    tfoot{
+      background-color: burlywood;
+      color: black;
+    }
+    thead{
+      background-color: chocolate;
+      color: white;
+      font-size: 20px;
+    }
+    tbody{
+      background-color: tomato;
+      color: white;
+    }
+  </style>
+  <script>
+    window.addEventListener("load",function(){
+      const tfootEle = document.querySelector("tfoot")
+
+      tfootEle.addEventListener("mouseover",function(e){
+        tfootEle.style.backgroundColor = "yellow";
+    });
+    tfootEle.addEventListener("mouseout",function(e){
+        tfootEle.style.backgroundColor = "";
+    });
+
+    const buttonEle = document.querySelector("button");
+    buttonEle.addEventListener("click",function (e){
+      tfootEle.style.fontSize ="35px";
+    });
+    });
+    
+  </script>
+</head>
+<body>
+  <button>클릭!!</button>
+  <table border="1">
+    <thead>
+    <tr>
+      <th>1열</th> 
+      <th>1열</th> 
+      <th>1열</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2열</td>
+      <td>2열</td>
+      <td>2열</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>3열</td>
+      <td>3열</td>
+      <td>3열</td>
+    </tr>
+  </tfoot>
+  </table>
+</body>
+</html>
