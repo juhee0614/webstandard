@@ -1,0 +1,7 @@
+@charset "utf-8";
+body{font-family:휴먼편지체;}
+header h1{ color: black; text-align: center; font-family: malgun gothic;}
+header{background-color: greenyellow; height: 15vh;}
+section{background-color: pink; height: 75vh;}
+span { color: blue;  font-weight: bolder; font-family: malgun gothic;}
+footer{background-color: plum; height: 10vh; }
