@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    margin: 0; 
+    }
+    .box1 {
+      background-color: yellow;
+      height: 40px;
+      line-height: 40px;
+    }
+    .box1 a{text-decoration: none;
+    color: black; font-size: small;}
+    .box2{
+      background-color: aqua;
+      text-align: center;
+      height: 130px;
+      line-height: 130px;
+    }
+    ul{
+      background-color: skyblue;
+      margin: 0px;
+      height: 40px;
+      padding-left: 100px;
+      line-height: 40px;
+    }
+    ul>li{
+      display: inline-block;
+      width: 55px; font-size: 0.9em;
+    }
+    .box34{
+      margin: auto 30%;
+      width: 100%;
+    }
+    .box3{
+      box-sizing: border-box;
+      background-color: red;
+      height: 250px; width: 200px;
+      float: left; line-height: 250px;
+      text-align: center;
+      border-top: black 3px solid;
+      border-bottom: black 3px solid;
+      border-left: black 3px solid;
+    }
+    .box4{
+      box-sizing: border-box;
+      background-color: blue;
+      height: 250px; width: 400px;
+      float: left; line-height: 250px;
+      text-align: center;
+      border-top: black 3px solid;
+      border-bottom: black 3px solid;
+      border-right: black 3px solid;
+    }
+    .box5{
+      background-color: grey;
+      height: 130px;
+      color: rgb(90, 83, 83);
+      line-height: 130px;
+      text-align: center;
+    }
+    .clearfix{clear: both;}
+  </style>
+</head>
+<body>
+  <div>
+    <div class="box1">
+      <a href="#">Log-in</a>
+      <a href="#">Event Sale</a>
+    </div>
+    <div class="box2">header</div>
+    <ul>
+      <li class="menu1">menu1 </li>
+      <li class="menu2">menu2 </li>
+      <li class="menu3">menu3 </li>
+      <li class="menu4">menu4 </li>
+      <li class="menu5">menu5 </li>
+    </ul>
+    <div class="box34">
+      <div class="box3">sidebar</div>
+      <div class="box4">content</div>
+    </div>
+    <div class="box5 clearfix">footer</div>
+  </div>
+</body>
+</html>
