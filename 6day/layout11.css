@@ -1,0 +1,275 @@
+@charset "utf-8";
+   /* *{outline: 1px solid red;} */
+   body{margin: 0;}
+   .container{
+     width: 800px; height:100%; margin: 0 auto;
+   }
+   ul{
+     padding-left: 0;
+     list-style-type: none;
+     margin: 0;
+   }
+   a{text-decoration: none; color: inherit;}
+   .uppermost{
+     background-color: #c38a9e;
+     height: 30px;
+   }
+   .uppermost .container-upm{
+     width: 100%;
+   }
+   .uppermost .container-upm *{
+     /* outline: 1px solid white; */
+   }
+   .uppermost .container-upm .upm-menu li{
+     float: left;
+     padding: 3px 5px;
+   }
+   .uppermost .container-upm .upm-menu li:nth-child(2){
+     width: 60px;
+     font-family: 'Roboto Slab', serif;
+   } 
+   .uppermost .container-upm .upm-menu li:nth-child(3){
+    
+   } 
+   .uppermost .container-upm .upm-menu li:nth-child(4){
+     width: 100px;
+     font-family: 'Roboto Slab', serif;
+   }
+  .uppermost .container-upm .upm-menu li:nth-last-child(1){
+    float: right; 
+  }
+  .uppermost .container-upm .upm-menu li:nth-last-child(1) input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 3px 0;
+  }
+  
+   .header{
+     background-color: aqua;
+     height: 200px;
+   }
+   .header .container-h
+   {width: 100%;
+   background-image: url(https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     position: relative;
+     font-family: 'Jua', sans-serif;
+ }
+ .header .container-h::after{
+   content: "산책? 산책갈까~?";
+   font-size: 4rem;
+   position: absolute;
+   left: 80px;
+   bottom: 30px;
+   color: darkorchid;
+   text-shadow:  5px 5px 3px lightpink;
+
+ }
+ .header .container-h:hover::after{
+   font-size: 5rem;
+   transform: rotate(-30deg); 
+ }
+   .nav{
+     background-color: #ffedff;
+     height: 30px;
+     text-transform:uppercase;
+     font-family: 'Indie Flower', cursive;
+   }
+   
+   .nav ul li{
+     float: left;
+     padding: 3px 10px;
+     position: relative;
+     letter-spacing: 0.10em; /*글자간격조절*/
+   }
+   .nav ul li:nth-child(1) {
+     padding-left: 0;
+   }
+   .nav ul li:hover a{
+     text-decoration: underline;
+     font-weight: bold;
+   }
+   .nav ul li:hover::before{
+     content: " ";
+     display: block;
+     width: 100%; height: 3px;
+     position: absolute;
+     left: 0; top: 1.3em;
+     background-color: tomato;
+     /*메뉴에 마우스를 올리면 아래에 선이 생기게함 */
+     transition: all 0.5s;
+   }
+   .main{
+     height: 400px;
+   }
+   .sidebar{
+     width: 30%; background-color: rgb(216, 177, 221);
+     float: left;
+     height: 100%;
+     font-family: 'Jua', sans-serif;
+
+   }
+   .content{
+     width: 70%; background-color: lightpink;
+     float: left;
+     height: 100%;
+   }
+   .content form{
+     width: 50%; margin: 50px auto;
+   }
+   .content form ul li{
+     padding: 5px 0;
+   }
+   .content form p{
+     text-align: center;
+     padding: 10px 0;
+     color: white;
+     margin: 0;
+   }
+   .content form ul{
+     color: white;
+     font-weight: bold;
+   }
+   .content form ul li input{
+     width: 90%;
+     box-sizing: border-box;
+     vertical-align: top;
+   }
+   .content form ul li span{
+     vertical-align: top;
+   }
+   .content form ul li button{
+     width: 100%;
+     border: none;
+     padding: 5px 0;
+     background-color: lemonchiffon;
+     font-weight: bolder;
+   }
+   .footer{
+     height: 100%;
+     width: 1200px;
+    margin: 0 auto;
+     clear: both;
+   }
+   .footerbaby {
+     width: 100%;
+     text-transform: uppercase;
+     font-family: font-family: 'Noto Serif KR', serif;;
+   }
+   .footer .box1{
+     background-color: rebeccapurple;
+     width: 150px;
+     height: 150px;
+     line-height: 150px;
+     text-align: center;
+     float: left;
+     margin-left: 1%;
+     color: white;
+     font-weight: bold;
+     font-family: 'Indie Flower', cursive;
+   }
+   .footer .policy{
+     float: left;
+     padding-left: 5%;
+     width: 100px;
+   }
+   .footer .policy p {
+     font-weight: bold;
+      font-size: 0.8em;
+   }
+   .footer .policy li{
+     list-style-type: none;
+     font-size: 0.9em;
+     color: gray;
+   }
+   .policy >ul>li .pink {
+     color: hotpink;
+     font-weight: 600;
+   }
+   .footer .customer {
+     width: 280px;
+     float: left;
+     padding-left: 2%;
+   }
+   .footer .customer p{
+     font-weight: bold;
+     font-size: small;
+   }
+   .footer .customer .time{
+     font-size: small;
+     color: gray;
+     letter-spacing: 1px;
+
+   }
+   .footer .customer .tell{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-size: 1.5em;
+     font-weight: bold;
+   }
+   .footer .customer .bank{
+     color: rgb(109, 182, 241);
+     font-size: 0.7em;
+     font-weight: bold;
+     padding-top: 5px;
+   }
+   .footer .company {
+     width: 500px;
+    float: left;
+    padding-left: 2%;
+  }
+  .footer .company p{
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .footer .company div{
+    
+    color:lightslategrey;
+    font-size: 0.8em;
+    line-height: 22px;
+  }
+  .footer .company div .point{
+    background-color: rgb(109, 182, 241);
+    color: white;
+  }
+  .footer .company div a{
+    background-color: black;
+    color: white;
+  }
+   .footer .copyright{
+     font-size: small;
+     color:darkgray;
+     text-align: center;
+     line-height: 100px;
+     clear: both;
+   }
+   .clearfit::after{
+     content: " "; display: block; clear: both;
+   }
+   .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    font-size: 1.3em;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
