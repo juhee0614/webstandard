@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {margin: 0;}
+    body .box{width: 800px; margin: 0 auto; text-align: center; height: 100%;}
+    .uppermost {
+      height: 40px;
+      background-color: darkslateblue;
+    }
+    .box1{background-color: rgb(135, 51, 190);  line-height: 40px;}
+    .header {
+      height: 130px;
+      background-color: rgb(114, 103, 180);
+    }
+    .box2{background-color:rgb(155, 107, 201); line-height: 130px;}
+    .nav {
+      height: 40px;
+      background-color: rgb(160, 153, 206);
+    }
+    .box3{background-color:rgb(154, 139, 168); line-height: 40px;}
+    .content {
+      height: 200px;
+      background-color: lightgrey;
+    }
+    
+    .content .box4 div{list-style-type: none;}
+    .content .con{
+      width: 60%;
+      background-color: dimgray;
+      height: 194px;
+      float: left;
+      line-height: 194px;
+    }
+    .content .sideb {
+      width: 20%;
+      background-color: darkslateblue;
+      height: 194px;
+      float: left;
+      line-height: 194px;
+    }
+    .content .sidem {
+      width: 20%;
+      background-color: darkcyan;
+      height: 194px;
+      float: left;
+      line-height: 194px;
+    }
+    .content .box4{height: 200px; border: solid 3px black; box-sizing: border-box;}
+    .content .box4 ul{margin: 0; padding: 0;}
+    .footerMenu {
+      height: 40px;
+      background-color: rgb(188, 188, 235);
+    }
+    .box5{background-color:rgb(221, 193, 248); height: 40px; line-height: 40px;}
+    .footer {
+      height: 130px;
+      background-color: lavender;
+    }
+    .box6{background-color:rgb(238, 225, 250); height: 130px; line-height: 130px;}
+    .clearfix {clear: both;}
+  </style>
+</head>
+<body>
+  <div class="uppermost"><div class="box box1">uppermost Menu</div></div>
+  <div class="header"><div class="box box2">header</div></div>
+  <div class="nav"><div class="box box3">nav</div></div>
+  <div class="content">
+    <div class="box box4 ">
+          <div class="wrap clearfix">
+            <div class="con">content<div>
+            <div class="sideb">sidebanner</div>
+            <div class="sidem">sidemenu</div>
+          </div>
+  </div >
+</div>
+  <div class="footerMenu "><div class="box box5">footer Menu</div></div>
+  <div class="footer"><div class="box box6">footer</div></div>
+</body>
+</html>

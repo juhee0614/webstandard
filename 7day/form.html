@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <title>회원가입</title>
+  <style>
+    *{background-color: rgb(245, 245, 245); 
+    padding-top: 15px; padding-bottom: 5px; 
+    margin: 0; }
+    html{ padding-top: 0;}
+    .wrap{ width: 500px; margin: 0 auto;}
+    form{padding: 0;}
+    body .header{text-transform: uppercase; font-size: 3em; text-align: center; font-weight: 900; color: rgb(96, 221, 96); font-family: 'Archivo Black', sans-serif;}
+    .bold{font-weight: bold; font-size: 0.8em; padding-bottom: 0;}
+    .wrap input{width: 100%; 
+    border-width: 1px;
+    box-sizing: border-box; 
+    padding: 0; height: 40px; 
+    border-color: rgb(224, 213, 213);
+    outline: none;}
+    .wrapbirth {padding: 0;}
+    input.year{width: 150px; float: left;}
+    select.month{width: 150px; float: left; padding: 0; height: 40px; margin-left: 25px; border-color: rgb(224, 213, 213); }
+    input.day{width: 150px; float: left; margin-left: 25px; }
+    select.sex{width: 100%; border-color: rgb(224, 213, 213);}
+    span.choice{font-size: small; color: lightslategrey;}
+    select.con{width: 100%; border-color: rgb(224, 213, 213);}
+    input.telnum{width: 370px; }
+    button.codenum{width: 120px; 
+    padding: 0; height: 40px; 
+    margin-right: 5px; float:right; 
+    background-color: rgb(96, 221, 96);
+    color: white;border: 0; }
+    div.codenum {padding-top: 10px;}
+    button.join{
+      width: 100%; margin-top: 10px; background-color: rgb(96, 221, 96); color: white;
+      border-color: rgb(75, 197, 75); font-weight: bold;
+    }
+    .clearfix::after{content: " "; display: block; clear: both;}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">naver</div>
+  <div class="bold">아이디</div>
+  <input type="text" name="user_id" id="">
+  <div class="bold">비밀번호</div>
+  <input type="password" name="user_pw" id="" >
+  <div class="bold">비밀번호재확인</div>
+  <input type="password" name="user_pw_re" id="">
+  <div class="bold">이름</div>
+  <div class="wrapbirth clearfix">
+    <input type="text" name="user_name" id="">
+    <div class="bold">생년월일</div>
+    <input type="text" name="user_b_year" id="" class="year" placeholder="년(4자)">
+    <form>
+    <select name="birth" class="month">
+      <option value="0">월</option>
+      <option value="1">1월</option>
+      <option value="2">2월</option>
+      <option value="3">3월</option>
+      <option value="4">4월</option>
+      <option value="5">5월</option>
+      <option value="6">6월</option>
+      <option value="7">7월</option>
+      <option value="8">8월</option>
+      <option value="9">9월</option>
+      <option value="10">10월</option>
+      <option value="11">11월</option>
+      <option value="12">12월</option>
+    </select>
+    </form>
+    <input type="text" name="user_b_day" id="" class="day" placeholder="일">
+  </div>
+  <div class="bold">성별</div>
+  <form action="">
+  <select name="sex" class="sex">
+    <option value="0">성별</option>
+    <option value="1">남</option>
+    <option value="2">여</option>
+  </select>
+  <div class="bold">본인확인이메일 <span class="choice">(선택)</span></div>
+  <input type="text" name="user_email" id="" placeholder="선택입력">
+  <div class="bold">휴대전화</div>
+  <select class="con">
+    <option value="0">대한민국 +82</option>
+    <option value="1">미국</option>
+    <option value="2">베트남</option>
+  </select>
+</form>
+  <div class="codenum clearfix">
+    <input type="text" name="user_telnum" id="" class="telnum" placeholder="전화번호 입력">
+    <button class="codenum">인증번호받기</button>
+  </div>
+  <input type="text" name="user_code" id=""placeholder="인증번호 입력하세요">
+  <button class="join">가입하기</button>
+
+  </div>
+</div>
+</body>
+</html>
